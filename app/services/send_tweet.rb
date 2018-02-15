@@ -6,7 +6,7 @@ class SendTweet
 
   def perform
     #log_in_to_twitter.update(@tweet)
-    return LANG
+    return ENV['TWITTER_API_KEY']
   end
 
   def log_in_to_twitter
