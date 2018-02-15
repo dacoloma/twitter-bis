@@ -9,13 +9,16 @@ class SendTweet
   end
 
   def log_in_to_twitter
+=begin
     client = Twitter::REST::Client.new do |config|
-      config.consumer_key        = 'TWITTER_API_KEY'
-      config.consumer_secret     = 'TWITTER_API_SECRET'
-      config.access_token        = 'TWITTER_ACCESS_TOKEN'
-      config.access_token_secret = 'TWITTER_ACCESS_TOKEN_SECRET'
+      config.consumer_key        = TWITTER_API_KEY
+      config.consumer_secret     = TWITTER_API_SECRET
+      config.access_token        = TWITTER_ACCESS_TOKEN
+      config.access_token_secret = TWITTER_ACCESS_TOKEN_SECRET
     end
     client
+=end
+    p TWITTER_ACCESS_TOKEN_SECRET
   end
 
   def send_twitter(id)
