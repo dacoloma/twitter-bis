@@ -5,7 +5,8 @@ class SendTweet
   end
 
   def perform
-    log_in_to_twitter.update(@tweet)
+    #log_in_to_twitter.update(@tweet)
+    return TWITTER_ACCESS_TOKEN_SECRET
   end
 
   def log_in_to_twitter
@@ -18,7 +19,7 @@ class SendTweet
     end
     client
 =end
-    p TWITTER_ACCESS_TOKEN_SECRET
+
   end
 
   def send_twitter(id)
