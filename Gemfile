@@ -11,6 +11,7 @@ gem 'jquery-rails', '4.3.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
 #gem 'devise'
+gem 'dotenv-rails', groups: [:development, :test], require: 'dotenv/rails-now'
 gem 'twitter'
 
 group :development, :test do
@@ -20,7 +21,6 @@ group :development, :test do
   gem 'guard-rspec', require: false
   #gem 'factory_bot_rails'
   #gem 'database_cleaner'
-  gem 'dotenv-rails'
 end
 
 group :development do
