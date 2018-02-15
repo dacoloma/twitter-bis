@@ -6,7 +6,7 @@ class SendTweet
 
   def perform
     #log_in_to_twitter.update(@tweet)
-    return TWITTER_ACCESS_TOKEN_SECRET
+    return LANG
   end
 
   def log_in_to_twitter
