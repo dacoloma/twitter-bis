@@ -17,8 +17,4 @@ class SendTweet
     end
     client
   end
-
-  def send_twitter(id)
-    client.update("@#{id} #{@tweet}")
-  end
 end
